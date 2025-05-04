@@ -136,12 +136,14 @@ public class Main {
 	public static void findStudentById() {
 		System.out.println("Please enter student id: ");
 		String studentId = scanner.next();
+		
 //		Student result = studentList.stream()
 //				.filter(x -> x.getStudentId()
 //				.equals(studentId))
 //				.findFirst()
 //				.orElseThrow(() -> new RuntimeException("Data not found!!"));
 //		return result;
+		
 		boolean isValidStudentId = false;
 		for(Student s: studentList) {
 			if (s.getStudentId().equals(studentId)) {
